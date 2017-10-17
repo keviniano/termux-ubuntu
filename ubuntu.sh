@@ -12,7 +12,7 @@ if [ "$first" != 1 ];then
         elif [ "$(dpkg --print-architecture)" = "arm" ];then
             wget https://partner-images.canonical.com/core/zesty/current/ubuntu-zesty-core-cloudimg-armhf-root.tar.gz -O ubuntu.tar.gz
         elif [ "$(dpkg --print-architecture)" = "i686" ];then
-            wget https://partner-images.canonical.com/core/zesty/current/ubuntu-zesty-core-cloudimg-amd64-root.tar.gz -O ubuntu.tar.gz
+            wget https://partner-images.canonical.com/core/zesty/current/ubuntu-zesty-core-cloudimg-i386-root.tar.gz -O ubuntu.tar.gz
         else
             echo "unknown architecture"
             exit 1
